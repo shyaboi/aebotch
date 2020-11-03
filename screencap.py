@@ -47,7 +47,8 @@ def get_video_type(filename):
 
 
 
-cap = cv2.VideoCapture(0)
+
+cap = cv2.VideoCapture(10)
 out = cv2.VideoWriter(filename, get_video_type(filename), 25, get_dims(cap, res))
 
 while True:
