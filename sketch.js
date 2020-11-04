@@ -46,9 +46,9 @@ const rgb = () => {
 };
 setInterval(() => {
   rgb();
-}, 600);
+}, 2000);
 const ok = () => {
-  strokeWeight(random(22));
+  strokeWeight(random(11));
   stroke(r, g, b, random(255));
   point(x, y);
 
@@ -87,7 +87,7 @@ const ok = () => {
 
 function draw() {
   ok();
-  frameRate(random(1,60));
+  frameRate(60)//random(1,60));
 
   if (y < 0) {
     y = height;
